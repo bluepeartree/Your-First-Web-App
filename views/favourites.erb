@@ -1,0 +1,8 @@
+<h1> favourites</h1>
+
+
+<ul>
+  <% @favourites.each do |key, value| %>
+    <li><a href="<%=value%>"><%=key%></a></li>
+  <%end%>
+</ul>
