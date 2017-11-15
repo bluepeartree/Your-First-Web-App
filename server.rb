@@ -19,3 +19,11 @@ get '/favourites' do
   @favourites = {"Twitter" => "https://twitter.com/", "BBC News" => "http://www.bbc.com/news", "Toronto Star" => "https://www.thestar.com/", "Vulture" => "http://www.vulture.com/", "AV Club" =>"https://www.avclub.com/"}
   erb :favourites
 end
+
+get '/' do
+  redirect to ('/home')
+end
+
+get '/gallery' do
+  redirect to ('/portfolio')
+end
